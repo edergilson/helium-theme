@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Helium
+Comment=A lightweight theme inspired by the elementary OS desktop theme
+Encoding=UTF-8
+
+Name[en_US]=Helium
+
+[X-GNOME-Metatheme]
+GtkTheme=Helium
+IconTheme=Helium
+CursorTheme=DMZ-Black
+ButtonLayout=close,minimize,maximize

@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Helium-Dark
+Comment=A lightweight dark theme inspired by the elementary OS desktop theme
+Encoding=UTF-8
+
+Name[en_US]=Helium-Dark
+
+[X-GNOME-Metatheme]
+GtkTheme=Helium-Dark
+IconTheme=Helium-Dark
+CursorTheme=DMZ-Black
+ButtonLayout=close,minimize,maximize

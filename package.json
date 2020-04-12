@@ -1,0 +1,21 @@
+{
+  "name": "helium-theme",
+  "version": "0.1.0",
+  "description": "A lightweight GTK theme based on elementary OS.",
+  "scripts": {
+    "beautify": "stylelint --fix **/*.css"
+    "test": "stylelint **/*.css"
+  },
+  "devDependencies": {
+    "stylelint": "^13.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paysonwallach/helium-theme.git"
+  },
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/paysonwallach/helium-theme/issues"
+  },
+  "homepage": "https://github.com/paysonwallach/helium-theme#readme"
+}
