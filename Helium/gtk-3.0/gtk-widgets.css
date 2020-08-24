@@ -1663,6 +1663,7 @@ notebook tab {
   border-width: 0 1px;
   border-color: shade (@colorPrimary, 0.82);
   color: shade (@text_color, 1.12);
+  padding: 0 8px 0 4px;
   margin-left: -1px;
 }
 
@@ -1687,8 +1688,8 @@ notebook tab button.flat {
   min-height: 16px;
   min-width: 16px;
   border-radius: 3px;
-  padding: 0;
-  margin: 2px 0;
+  padding: 2px;
+  margin: 4px 0;
   color: #6d6d6d;
 }
 

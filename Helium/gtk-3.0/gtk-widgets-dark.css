@@ -102,6 +102,77 @@ levelbar block.empty:backdrop,
 /********
 * Scale *
 ********/
+scale slider {
+  background-image:
+    linear-gradient(
+      to bottom,
+      shade (
+        @base_color,
+        1.05
+      ),
+      shade (
+        @base_color,
+        0.95
+      )
+    );
+  border-radius: 12px;
+  box-shadow:
+    inset 0 0 0 1px alpha (@BLACK_100, 0.05),
+    inset 0 1px 0 0 alpha (@BLACK_100, 0.45),
+    inset 0 -1px 0 0 alpha (@BLACK_100, 0.15),
+    0 0 0 1px alpha (#000, 0.25),
+    0 1px 1px 1px alpha (#000, 0.1);
+  margin: -7px 0;
+  min-height: 14px;
+  min-width: 14px;
+}
+
+scale slider:focus {
+  background-image:
+    linear-gradient(
+      to bottom,
+      shade (
+        @base_color,
+        1.05
+      ),
+      shade (
+        mix (
+          @base_color,
+          @colorAccent,
+          0.1
+        ),
+        0.95
+      )
+    );
+  box-shadow:
+    inset 0 0 0 1px alpha (@BLACK_100, 0.05),
+    inset 0 1px 0 0 alpha (@BLACK_100, 0.45),
+    inset 0 -1px 0 0 alpha (@BLACK_100, 0.15),
+    0 0 0 1px alpha (shade (@colorAccent, 0.5), 0.25),
+    0 1px 1px 1px alpha (@colorAccent, 0.35),
+    0 1px 2px 1px alpha (@colorAccent, 0.16);
+}
+
+scale slider:backdrop {
+  background-image:
+    linear-gradient(
+      to bottom,
+      shade (
+        @base_color,
+        1.03
+      ),
+      shade (
+        @base_color,
+        0.97
+      )
+    );
+  box-shadow:
+    inset 0 0 0 1px alpha (@BLACK_100, 0.1),
+    inset 0 1px 0 0 alpha (@BLACK_100, 0.9),
+    inset 0 -1px 0 0 alpha (@BLACK_100, 0.3),
+    0 0 0 1px alpha (#000, 0.2),
+    0 1px 1px 1px alpha (#000, 0.08);
+}
 
 scale trough {
   min-height: 6px;
@@ -109,16 +180,16 @@ scale trough {
 }
 
 scale highlight {
-  background-color: @SILVER_700;
+  background-color: @BLACK_100;
   box-shadow: inset 0 1px 0 alpha (#fff, 0.2);
 }
 
 scale highlight:disabled {
-  background-color: @SILVER_900;
+  background-color: @BLACK_100;
 }
 
 scale fill {
-  background-color: alpha (@SILVER_700, 0.25);
+  background-color: alpha (@BLACK_100, 0.25);
   box-shadow: inset 0 1px 0 alpha (#fff, 0.05);
 }
 
@@ -170,6 +241,26 @@ button:active:disabled,
 /****************************
  * Check, Radio, and Switch *
  ***************************/
+
+switch slider {
+  background-image:
+    linear-gradient(
+      to bottom,
+      shade(@base_color, 1.05),
+      shade(@base_color, 0.95)
+    );
+  border: 1px solid alpha(#000, 0.2);
+  border-radius: 50%;
+  box-shadow:
+    inset 0 0 0 1px alpha(@BLACK_100, 0.05),
+    inset 0 1px 0 0 alpha(@BLACK_100, 0.45),
+    inset 0 -1px 0 0 alpha(@BLACK_100, 0.15),
+    0 1px 1px alpha(#000, 0.15),
+    0 1px 2px alpha(#000, 0.16);
+  margin: -1px;
+  min-height: 24px;
+  min-width: 24px;
+}
 
 check,
 radio {

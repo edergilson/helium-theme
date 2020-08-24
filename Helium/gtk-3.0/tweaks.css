@@ -1,0 +1,6 @@
+.maximized .titlebar, 
+.maximized headerbar,
+.tiled .titlebar,
+.tiled headerbar {
+    border-radius: 0;
+}
